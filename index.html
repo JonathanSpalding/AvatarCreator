@@ -9,34 +9,40 @@
     <script src="scripts/model.js"></script>
 </head>
 <body>
-    <div id = "avatarCreationArea">
-        <form name = "editForm">
+    <div id="avatarCreationArea" type = "hidden">
+        <h1 id="formTitle"></h1>
+        <form name="editForm">
+            Name 
             <input type = "text" name = "nameEdit" placeholder = "Prisoner"/>
-            <p id="nameError">&nbsp;</p>
+            <p id="nameError">&nbsp;</p><br/>
+            Age 
             <input type = "text" name = "ageEdit" />
-            <p id="ageError">&nbsp;</p>
-            <p>Gender</p>
-            <label><input type = "radio" name = "gender" value = "male" id = "genderMaleRadio" /></label>
-            <label><input type = "radio" name = "gender" value = "femaile" id = "femaleMaleRadio" /></label>
-            <p id = "genderError">&nbsp;</p>
+            <p id="ageError">&nbsp;</p><br/>
+            Gender<br/>
+            <label><input type = "radio" name = "gender" value = "male" id = "genderMaleRadio" />Male</label>
+            <label><input type = "radio" name = "gender" value = "femaile" id = "femaleMaleRadio" />Female</label>
+            <p id = "genderError">&nbsp;</p><br/>
             Skin Color<br/>
             <select name = "skinColor">
                 <option value = "white" selected>White</option>
                 <option value = "brown">Brown</option>
                 <option value = "black">Black</option>
             </select>
-            <p id = "skinColorError">&nbsp;</p>
+            <p id = "skinColorError">&nbsp;</p><br/>
             <input type = "checkbox" name = "sword" id = "sword"/>
             <label for = "sword">Equip a sword?</label>
-            <p id = "swordError">&nbsp;</p>
+            <p id = "swordError">&nbsp;</p><br/>
             <button type = "button" id = "createBtn">Create</button>
             <button type = "button" id = "cancelBtn">Cancel</button>
-        </form>
+            </form>
     </div>
-    <div id="">
+    <div id="avatarDisplayArea">
         <h1>Avatar Creation</h1>
         <button type = "button" id ="newBtn">Create Avatar</button>
-        <div id = "avatar"></div>
+        <img src="" id="avatar"></img>
     </div>
+    <script>
+        onPageLoad();    
+    </script>
 </body>
 </html>

@@ -9,10 +9,10 @@
     <script src="scripts/model.js"></script>
 </head>
 <body>
-    <div id="avatarCreationArea" type = "hidden">
+    <div id="avatarCreationArea">
         <h1 id="formTitle"></h1>
         <form name="editForm">
-            Name 
+            Name
             <input type = "text" name = "nameEdit" placeholder = "Prisoner"/>
             <p id="nameError">&nbsp;</p><br/>
             Age 
@@ -20,11 +20,11 @@
             <p id="ageError">&nbsp;</p><br/>
             Gender<br/>
             <label><input type = "radio" name = "gender" value = "male" id = "genderMaleRadio" />Male</label>
-            <label><input type = "radio" name = "gender" value = "femaile" id = "femaleMaleRadio" />Female</label>
+            <label><input type = "radio" name = "gender" value = "female" id = "genderFemaleRadio" />Female</label>
             <p id = "genderError">&nbsp;</p><br/>
             Skin Color<br/>
             <select name = "skinColor">
-                <option value = "white" selected>White</option>
+                <option value = "white" selected="selected">White</option>
                 <option value = "brown">Brown</option>
                 <option value = "black">Black</option>
             </select>
@@ -37,9 +37,9 @@
             </form>
     </div>
     <div id="avatarDisplayArea">
+        <img src="../img/spritesMaleWhite.jpg" id="avatar"></img>
         <h1>Avatar Creation</h1>
-        <button type = "button" id ="newBtn">Create Avatar</button>
-        <img src="" id="avatar"></img>
+        <button type = "button" id ="newBtn">New Avatar</button>
     </div>
     <script>
         onPageLoad();    

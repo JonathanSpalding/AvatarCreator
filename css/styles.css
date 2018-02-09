@@ -1,24 +1,44 @@
+Body {
+    background-color: #f0f3f3;
+    width: 400px;
+    margin: 4% auto;
+    font-family: sans-serif;
+}
+
 #avatarCreationArea {
+    background-color: white;
     display: none;
+    padding-left: 20px;
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 1px;
+    height: 250px;
+    width: 300px;
+}
+
+#avatarDisplayArea {
+    background-color: white;
+    display: block;
     padding-left: 20px;
     box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
     border-radius: 1px;
     height: 250px;
     width: 500px;
 }
-#avatarDispalyArea {
-    display: block;
-}
+
 #createBtn {
-    display: block;
+    display: inline;
 }
 
 #nameError, #ageError, #genderError, #skinColorError, #swordError {
     display: none;
 }
-button {
-    display: inline-block;
-}
+
 #avatar {
     display: none;
+    float: right;
+}
+
+#avatarResult {
+    display: none;
+    float: right;
 }
